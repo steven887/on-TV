@@ -1,11 +1,11 @@
 #!/bin/bash
-# File              : nonton.sh
+# File              : on-Tv
 # License           : MIT
 # Author            : Steven Agustinus <steven87.ags@gmail.com>
-# Date              : 13.06.2021
+# Date              : 14.06.2021
 # Last Modified Date: 14.06.2021
 # Last Modified By  : Steven Agustinus <steven87.ags@gmail.com>
-# nonton.sh
+# on-Tv
 # Copyright (c) 2021 Steven Agustinus <steven87.ags@gmail.com>
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,13 +25,6 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-# File              : nonton.sh
-# License           : MIT
-# Author            : Steven Agustinus <steven87.ags@gmail.com>
-# Date              : 13.06.2021
-# Last Modified Date: 13.06.2021
-# Last Modified By  : Steven Agustinus <steven87.ags@gmail.com>
-#!/usr/bin/env bash 
 
 echo -e '
 \e[97m
