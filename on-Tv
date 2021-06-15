@@ -3,7 +3,7 @@
 # License           : MIT
 # Author            : Steven Agustinus <steven87.ags@gmail.com>
 # Date              : 14.06.2021
-# Last Modified Date: 14.06.2021
+# Last Modified Date: 15.06.2021
 # Last Modified By  : Steven Agustinus <steven87.ags@gmail.com>
 # on-Tv
 # Copyright (c) 2021 Steven Agustinus <steven87.ags@gmail.com>
@@ -56,14 +56,14 @@ declare -a channelList=(
 "TRANS-TV       ==>    https://livestreaming-google-etslive.vidio.com/hls-p/ingest_733_720p/index.m3u8"
 "NET-TV         ==>    https://livestreaming-google-etslive.vidio.com/hls-p/ingest_875_720p/index.m3u8"
 "CNN-INDONESIA  ==>    https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/playlist.m3u8"
-"RCTI           ==>    https://vcdn2.rctiplus.id/live/eds/rcti_fta/live_fta/rcti_fta.m3u8"
+"RCTI           ==>    https://livestreaming-google-etslive.vidio.com/hls-p/ingest_665_720p/index.m3u8"
 "METROTV-NEWS   ==>    http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8"
 "KOMPAS-TV      ==>    https://livestreaming-google-etslive.vidio.com/hls-p/ingest_874_720p/index.m3u8"
 "SCTV           ==>    https://livestreaming-google-etslive.vidio.com/hls-p/ingest_204_720p/index.m3u8"
 "INDOSIAR       ==>    https://iptvcat.com/my_list/s/3726fa2ed03f6eee3366b7d425b90b45.m3u8"
 "GTV            ==>    https://vcdn2.rctiplus.id/live/eds/gtv_fta/live_fta/gtv_fta-avc1_1537200=6-mp4a_64000_eng=2.m3u8"
 "ATV            ==>    http://stream1.ninmedia.tv:1935/atv/udp.stream/chunklist_w465987392.m3u8"
-
+"O-CHANNEL      ==>    https://livestreaming-google-etslive.vidio.com/hls-p/ingest_206_720p/index.m3u8"
 )
 
 #show the channel list in column format
