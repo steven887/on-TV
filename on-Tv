@@ -49,7 +49,11 @@ function check_update(){
   if [ "$STATS" ];then 
         echo -e "<Version Status : Latest Version >"
   else
-        echo -e "need update"
+        echo -e "There's an update version \n"
+        echo -e "Run Automatic Update \n"
+        git pull origin main
+        sleep 2
+        clear
   fi
 }
 
