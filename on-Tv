@@ -48,8 +48,8 @@ function check_update() {
 while read oldrev newrev refname
 do
 branch=$(git rev-parse --symbolic --abbrev-ref $refname)
-if [ “master” = “$branch” ]; then
-git pull --all 
+if [ “main” = “$branch” ]; then
+git pull origin main 
 fi
 done
 }
