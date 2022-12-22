@@ -44,17 +44,18 @@ echo -e '
        Author : steven      Find me :  @steven887         
  =========================================================== \e[0m
 '                                                           
-function check_update() {
-while read oldrev newrev refname
-do
-branch=$(git rev-parse --symbolic --abbrev-ref $refname)
-if [ “main” = “$branch” ]; then
-git pull origin main 
+function check_update(){
+    STATS=$(git status|grep "up to date" )
+    if [ $STATS ]; then
+        echo "on-TV is the latest version"
+    else
+        echo "there's an update version for on-tv"
+        echo "Run Update.."
+        git pull origin main
+        echo "Update Success!"
 fi
-done
 }
 
-echo -e "checking update"
 check_update
 
 
