@@ -45,17 +45,11 @@ echo -e '
  =========================================================== \e[0m
 '                                                           
 function check_update(){
-  let changes=0
-  while read status filename; 
-  do
-      let changes=1
-      echo "there's an update.."
-      echo "Run Automtic Update..."
-      git pull
-      echo "Update Success!! \n"
-  done < <(git status --porcelain)
-  if (( ! changes )); then
-  echo -e "< Version Status : latest > \n"
+  STATS=$(git remote show origin | grep "(up to date)")
+  if [ "$STATS" ];then 
+        echo -e "<Version Status : Latest Version >"
+  else
+        echo -e "need update"
   fi
 }
 
