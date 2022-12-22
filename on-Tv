@@ -45,16 +45,18 @@ echo -e '
  =========================================================== \e[0m
 '                                                           
 function check_update(){
-    #STATS=$(git status|grep "up to date" )
-    STATS=$(git fetch --dry-run)
-    if [ "$STATS" == " " ]; then
-        echo -e "<version : latest version> \n" 
-    else
-        echo "there's an update version for on-tv"
-        echo "Run Update.."
-        git pull origin main
-        echo "Update Success!"
-fi
+  let changes=0
+  while read status filename; 
+  do
+      let changes=1
+      echo "there's an update.."
+      echo "Run Automtic Update..."
+      git pull
+      echo "Update Success!! \n"
+  done < <(git status --porcelain)
+  if (( ! changes )); then
+  echo "already latest version"
+  fi
 }
 
 check_update
