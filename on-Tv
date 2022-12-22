@@ -26,6 +26,24 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+
+function check_update(){
+  STATS=$(git remote show origin | grep "(up to date)")
+  if [ "$STATS" ];then 
+        echo -e "<Version Status : Latest Version > \n"
+  else
+        echo -e "There's an update version \n"
+        echo -e "Run Automatic Update \n"
+        git pull origin main
+        sleep 1
+        echo -e "Update Success!!"
+        sleep 2
+        clear
+  fi
+}
+
+check_update
+
 echo -e '
 \e[97m
  =========================================================== \e[0m
@@ -44,21 +62,6 @@ echo -e '
        Author : steven      Find me :  @steven887         
  =========================================================== \e[0m
 '                                                           
-function check_update(){
-  STATS=$(git remote show origin | grep "(up to date)")
-  if [ "$STATS" ];then 
-        echo -e "<Version Status : Latest Version > \n"
-  else
-        echo -e "There's an update version \n"
-        echo -e "Run Automatic Update \n"
-        git pull origin main
-        sleep 2
-        echo -e "Update Success!!"
-        clear
-  fi
-}
-
-check_update
 
 
 PLAYER="mpv"
