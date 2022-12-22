@@ -46,8 +46,8 @@ echo -e '
 '                                                           
 function check_update(){
     STATS=$(git status|grep "up to date" )
-    if [ $STATS == "Your branch is up to date with 'origin/main'."]; then
-        echo "on-TV is the latest version"
+    if [ "$STATS" == "Your branch is up to date with 'origin/main'." ]; then
+        echo -e "<version : latest version> \n" 
     else
         echo "there's an update version for on-tv"
         echo "Run Update.."
