@@ -47,12 +47,13 @@ echo -e '
 function check_update(){
   STATS=$(git remote show origin | grep "(up to date)")
   if [ "$STATS" ];then 
-        echo -e "<Version Status : Latest Version >"
+        echo -e "<Version Status : Latest Version > \n"
   else
         echo -e "There's an update version \n"
         echo -e "Run Automatic Update \n"
         git pull origin main
         sleep 2
+        echo -e "Update Success!!"
         clear
   fi
 }
