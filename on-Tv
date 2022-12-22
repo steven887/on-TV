@@ -44,7 +44,7 @@ echo -e '
        Author : steven      Find me :  @steven887         
  =========================================================== \e[0m
 '                                                           
-
+function check_update() {
 while read oldrev newrev refname
 do
 branch=$(git rev-parse --symbolic --abbrev-ref $refname)
@@ -52,6 +52,11 @@ if [ “master” = “$branch” ]; then
 git pull --all 
 fi
 done
+}
+
+echo -e "checking update"
+check_update
+
 
 PLAYER="mpv"
 
