@@ -55,7 +55,7 @@ function check_update(){
       echo "Update Success!! \n"
   done < <(git status --porcelain)
   if (( ! changes )); then
-  echo "already latest version"
+  echo "< Version Status : latest > \n"
   fi
 }
 
